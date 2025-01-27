@@ -9,13 +9,13 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <nav className="text-black m-4">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between h-16 sm:h-20 lg:h-24">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <img src={Logo} alt="logo" />
             <div>
-              <span id="logo-name" className="text-xl font-bold">
+              <span id="logo-name" className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
                 RSquareSoft Technologies
               </span>
               <p>Delivering Best-In-Class Technology</p>
