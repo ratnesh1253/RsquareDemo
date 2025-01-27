@@ -6,7 +6,7 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 const CareersPage = () => {
   
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 p-10">
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
         <div className="container mx-auto px-4 text-center ">
@@ -32,19 +32,29 @@ const CareersPage = () => {
           <div className="grid grid-cols-1 gap-8">
             {[
               {
-                title: 'Flexible Work',
+                title: 'Innovation Culture',
                 description: ' Join a team that thrives on innovation. At RSquareSoft, we encourage fresh ideas, creative thinking, and continuous learning. Our collaborative culture ensures that every team member has the opportunity to contribute to cutting-edge projects and make a real impact.',
+                icon: '💡'
+              },
+              {
+                title: 'Cutting-Edge Technologies',
+                description: 'Be part of a company that stays ahead of the curve. We work with the latest technologies in Cloud Computing, Data Anlaytics, Machine Learning, and Artificial Intelligence, providing our team members with the opportunity to work on exciting and challenging projects that push the boundaries of what’s possible.',
+                icon: '🤖'
+              },
+              {
+                title: 'Learning and Development',
+                description: 'We invest in our people. RSquareSoft is committed to the professional growth of our team members. Whether through training programs, certifications, or attending industry conferences, we support your journey to becoming a subject matter expert in your field.',
+                icon: '🎓'
+              },
+              {
+                title: 'Global Collaborations',
+                description: 'Join a diverse and dynamic team that collaborates on a global scale. Our projects span across industries and geographies, providing you with the chance to work with clients and colleagues from around the world.',
                 icon: '🌍'
               },
               {
-                title: 'Growth Opportunities',
-                description: 'Be part of a company that stays ahead of the curve. We work with the latest technologies in Cloud Computing, Data Anlaytics, Machine Learning, and Artificial Intelligence, providing our team members with the opportunity to work on exciting and challenging projects that push the boundaries of what’s possible.',
-                icon: '📈'
-              },
-              {
-                title: 'Competitive Benefits',
-                description: 'We invest in our people. RSquareSoft is committed to the professional growth of our team members. Whether through training programs, certifications, or attending industry conferences, we support your journey to becoming a subject matter expert in your field.',
-                icon: '🎯'
+                title: 'Work-Life Balance',
+                description: 'We understand the importance of a healthy work-life balance. RSquareSoft promotes flexibility, ensuring that our team members can achieve their professional goals while maintaining a fulfilling personal life.',
+                icon: '⚖️'
               }
             ].map((benefit, index) => (
               <motion.div

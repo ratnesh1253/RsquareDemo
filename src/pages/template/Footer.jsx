@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
+import Logo from "./../../assets/RSquareLogo.png";
 
 
 
@@ -16,13 +17,27 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-100 py-16">
+    <footer className="bg-gray-900 text-gray-100 py-16 p-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info Column */}
           <div>
-            <h5 className="text-xl font-bold mb-6">RSquareSoft Technologies</h5>
-            <p className="mb-6">Transforming ideas into digital reality. We create innovative solutions that drive business growth and success.</p>
+            <div className="">
+              <div className=' flex items-center '>
+                        <img className='pl-0 mb-40' src={Logo} alt="logo" />
+                        <span id="logo-name" className="text-xl font-bold mb-40">
+                          RSquareSoft Technologies
+                          
+                        </span>
+                        </div>
+                 
+                        <div>
+                          <p className='mb-8 text-sm '>Delivering Best-In-Class Technology</p>
+                        </div>
+                       
+
+            </div>
+            
             <div className="flex gap-4 mb-6">
               <a href="#" className="text-gray-100 hover:text-blue-400 transition-colors">
                 <div className='w- 10 h-6'><FacebookIcon/></div>
@@ -38,8 +53,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Column */}
-          <div>
-            <h5 className="text-xl font-bold mb-6">Quick Links</h5>
+          <div className='ml-32'>
+            <h5 className="text-xl font-bold mb-6 ">Quick Links</h5>
             <ul className="space-y-3">
               <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
               <li><a href="/about-us/" className="hover:text-blue-400 transition-colors">About Us</a></li>
@@ -52,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Services Column */}
-          <div>
+          <div className='ml-12'>
             <h5 className="text-xl font-bold mb-6">Our Services</h5>
             <ul className="space-y-3">
               <li><a href="#" className="hover:text-blue-400 transition-colors">Web Development</a></li>
@@ -68,14 +83,14 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-6">Contact Us</h5>
             <div className="space-y-3 mb-6">
-              <p className="flex items-center">
-              <div className='w- 10 h-6 mr-3'><LocationOnIcon/></div>Office #, 2nd Floor, The Woods Commercial, Wakad, Pune 411057
+              <p className="flex items-center w- 10 h-6 mr-3">
+              <LocationOnIcon/>Office #, 2nd Floor, The Woods Commercial, Wakad, Pune 411057
               </p>
-              <p className="flex items-center">
-              <div className='w- 10 h-6 mr-3'><CallIcon/></div>                (555) 123-4567
+              <p className="flex items-center w- 10 h-6 mr-3">
+              <CallIcon/>                (555) 123-4567
               </p>
-              <p className="flex items-center">
-              <div className='w- 10 h-6 mr-3'><MailIcon/></div>info@rsquaresoft.com
+              <p className="flex items-center w- 10 h-6 mr-3">
+              <MailIcon/>info@rsquaresoft.com
               </p>
             </div>
             <div className="flex">
