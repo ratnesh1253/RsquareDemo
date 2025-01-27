@@ -9,10 +9,7 @@
     "@mui/material": "^6.4.1",
     "@testing-library/react": "^16.2.0",
     "cra-template": "1.2.0",
-<<<<<<< HEAD
-=======
     "framer-motion": "^12.0.5",
->>>>>>> 5ba735367cbbcae58d6aea833c6b82c514c01f88
     "lucide-react": "^0.474.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
