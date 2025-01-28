@@ -8,10 +8,10 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-10">
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <section className="py-5 bg-gradient-to-r from-orange-600 to-indigo-700 text-white border-2 border-green-500 rounded-lg shadow-lg p-6">
         <div className="container mx-auto px-4 text-center ">
           <div><BusinessCenterIcon></BusinessCenterIcon></div>
-          <h2 className="text-3xl font-bold mb-6">Career</h2>
+          <h1 className="text-5xl font-bold mb-6 text-orange-500">Career</h1>
           <p className=" mb-8  mx-auto">
           Joining RSquareSoft Technologies means embarking on a career journey infused with innovation, growth, and meaningful impact. As a pioneering force in Cloud Computing, Machine Learning, Data Anlytics, and Artificial Intelligence, we understand that our team is the cornerstone of our success. At RSquareSoft, we don’t just offer jobs; we provide opportunities for individuals to contribute to groundbreaking projects, shape cutting-edge technologies, and be part of a collaborative and forward-thinking community. We believe in fostering an environment where talents are not just recognized but are continually nurtured, where creativity is not only encouraged but is a driving force behind every solution we develop. Your career at RSquareSoft is not just a job; it’s a pathway to professional fulfillment, personal growth, and the chance to be a part of shaping the future of technology.
           </p>
@@ -77,7 +77,7 @@ const CareersPage = () => {
       
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
+      <section className="relative bg-gradient-to-r from-green-600 to-indigo-700 text-white py-24 border-2 border-orange-500 rounded-lg shadow-lg p-6 ">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div 
@@ -86,15 +86,15 @@ const CareersPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-5xl font-bold mb-6">Join Our Team</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-500">Join Our Team</h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">Join us and be part of the future of technology!</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+              <a href='/' className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
                 View Open Positions
-              </button>
-              <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all">
+              </a>
+              <a href='/' className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all">
                 Learn About Culture
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
