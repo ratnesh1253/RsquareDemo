@@ -54,11 +54,31 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-6">Our Services</h5>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Web Development</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Mobile Apps</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Cloud Solutions</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">UI/UX Design</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Consulting</a></li>
+              <li>
+                <a href="/" className="hover:text-blue-400 transition-colors">
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:text-blue-400 transition-colors">
+                  Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:text-blue-400 transition-colors">
+                  Cloud Solutions
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:text-blue-400 transition-colors">
+                  UI/UX Design
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:text-blue-400 transition-colors">
+                  Consulting
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -89,9 +109,24 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="mb-4 md:mb-0">© {currentYear} RSquareSoft Technologies. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="text-sm hover:text-blue-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="text-sm hover:text-blue-400 transition-colors">Terms of Service</a>
-              <a href="#" className="text-sm hover:text-blue-400 transition-colors">Cookie Policy</a>
+              <a
+                href="/"
+                className="text-sm hover:text-blue-400 transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/"
+                className="text-sm hover:text-blue-400 transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="/"
+                className="text-sm hover:text-blue-400 transition-colors"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>

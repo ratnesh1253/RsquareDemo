@@ -1,61 +1,68 @@
 import React, { useState } from "react";
-import Logo from "./../../assets/RSquareLogo.png";
 import { Menu, X } from "lucide-react";
+import Logo from "./../../assets/RSquareLogo.png";
 import "./Header.css";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const navLinks = [
+    { name: "HOME", href: "https://rsquaresoft.com/" },
+    { name: "ABOUT US", href: "/about-us/" },
+    { name: "PRODUCTS", href: "/products/" },
+    { name: "SERVICES", href: "/services/" },
+    { name: "CAREER", href: "/career/" },
+    { name: "CONTACT US", href: "/contact-us/" },
+  ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="text-black m-4">
+    <nav className="bg-white shadow-md">
+      {/* Main navbar container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-16 sm:h-20 lg:h-24">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <img src={Logo} alt="logo" />
-            <div>
-              <span id="logo-name" className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
-                RSquareSoft Technologies
-              </span>
-              <p>Delivering Best-In-Class Technology</p>
+        <div className="flex items-center justify-between h-20">
+          {/* Logo and company name section */}
+          <a href="https://rsquaresoft.com/">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <img src={Logo} alt="Company Logo" className="h-17 w-17" />
+              </div>
+              <div className="ml-4 my-4 flex flex-col">
+                <div id="logo-name" className="text-2xl text-black-800">
+                  RSquareSoft Technologies
+                </div>
+                <div className="text-xs text-gray-600 ">
+                  Delivering Best-In-Class Technology
+                </div>
+              </div>
+            </div>
+          </a>
+
+          {/* Desktop navigation */}
+          <div className="hidden lg:block">
+            <div className="ml-10 flex items-center space-x-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-black-600 hover:text-blue-900 hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                >
+                  {link.name}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="https://rsquaresoft.com/" className="hover:text-blue-400">
-              Home
-            </a>
-
-            <a href="/about-us/" className="hover:text-blue-400">
-              About Us
-            </a>
-
-            <a href="/products/" className="hover:text-blue-400">
-              Products
-            </a>
-
-            <a href="/services/" className="hover:text-blue-400">
-              Services
-            </a>
-
-            <a href="/career/" className="hover:text-blue-400">
-              Career
-            </a>
-
-            <a id="/contact-us/" href="#" className="hover:text-blue-400">
-              Contact Us
-            </a>
-          </div>
-
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md hover:bg-slate-800"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black-700 hover:text-blue-900 hover:bg-blue-100 focus:outline-none"
             >
-              {isOpen ? (
+              {isMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
                 <Menu className="h-6 w-6" />
@@ -63,50 +70,21 @@ export default function Header() {
             </button>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="https://rsquaresoft.com/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                Home
-              </a>
-              <a
-                href="/about/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                About
-              </a>
-              <a
-                href="/products/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                Products
-              </a>
-              <a
-                href="/services/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                Services
-              </a>
-              <a
-                href="/career/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                Career
-              </a>
-              <a
-                href="/contact-us/"
-                className="block px-3 py-2 rounded-md hover:bg-slate-800"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        )}
+      {/* Mobile menu */}
+      <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-black-600 hover:text-blue-900 hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   );
