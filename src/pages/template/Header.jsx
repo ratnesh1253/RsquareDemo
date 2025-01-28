@@ -10,6 +10,7 @@ export default function Header() {
     { name: "HOME", href: "https://rsquaresoft.com/" },
     { name: "ABOUT US", href: "/about-us/" },
     { name: "PRODUCTS", href: "/products/" },
+    { name: "SERVICES", href: "/services/" },
     { name: "CAREER", href: "/career/" },
     { name: "CONTACT US", href: "/contact-us/" },
   ];
