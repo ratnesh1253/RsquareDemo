@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <div className="">
               <div className=" flex items-center  ">
-                <img className="pl-0 mb-8" src={Logo} alt="logo" />
+                <img className=" mb-8" src={Logo} alt="logo" />
                 <span id="logo-name" className="text-xl font-600 text-center">
                   RSquareSoft Technologies
                   <p
@@ -34,7 +34,7 @@ const Footer = () => {
 
             <div className="flex gap-4 ms-20 mb-6">
               <a
-                href="#"
+                href="www.facebook.com/"
                 className="text-gray-100 hover:text-blue-400 transition-colors"
               >
                 <div className="w- 10 h-6">
@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
               </a>
               <a
-                href="#"
+                href="www.x.com"
                 className="text-gray-100 hover:text-blue-400 transition-colors"
               >
                 <div className="w- 10 h-6">
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>{" "}
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/rsquaresoft/"
                 className="text-gray-100 hover:text-blue-400 transition-colors"
               >
                 <div className="w- 10 h-6">
@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>{" "}
               </a>
               <a
-                href="#"
+                href="www.instagram.com"
                 className="text-gray-100 hover:text-blue-400 transition-colors"
               >
                 <div className="w- 10 h-6">
@@ -125,27 +125,27 @@ const Footer = () => {
             <h5 className="text-xl font-bold mb-6">Our Services</h5>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="/" className="hover:text-blue-400 transition-colors">
                   Web Development
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="/" className="hover:text-blue-400 transition-colors">
                   Mobile Apps
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="/" className="hover:text-blue-400 transition-colors">
                   Cloud Solutions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="/" className="hover:text-blue-400 transition-colors">
                   UI/UX Design
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="/" className="hover:text-blue-400 transition-colors">
                   Consulting
                 </a>
               </li>
@@ -156,27 +156,19 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-6">Contact Us</h5>
             <div className="space-y-3 mb-6">
-              <p className="flex items-center w- 10 h-6 mr-3">
+              <p className="flex items-center  ">
                 <LocationOnIcon />
-                Office #, 2nd Floor, The Woods Commercial, Wakad, Pune 411057
+                <p className="ms-5">
+                  Office #, 2nd Floor, The Woods Commercial, Wakad, Pune-411057
+                </p>
               </p>
-              <p className="flex items-center w- 10 h-6 mr-3">
-                <CallIcon /> (555) 123-4567
+              <p className="flex items-center">
+                <CallIcon /> <p className="ms-5">(555) 123-4567</p>
               </p>
-              <p className="flex items-center w- 10 h-6 mr-3">
+              <p className="flex items-center">
                 <MailIcon />
-                info@rsquaresoft.com
+                <p className="ms-5">info@rsquaresoft.com</p>
               </p>
-            </div>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Subscribe to newsletter"
-                className="px-4 py-2 w-full bg-gray-800 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-r hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400">
-                Subscribe
-              </button>
             </div>
           </div>
         </div>
@@ -190,19 +182,19 @@ const Footer = () => {
             </p>
             <div className="flex gap-6">
               <a
-                href="#"
+                href="/"
                 className="text-sm hover:text-blue-400 transition-colors"
               >
                 Privacy Policy
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-sm hover:text-blue-400 transition-colors"
               >
                 Terms of Service
               </a>
               <a
-                href="#"
+                href="/"
                 className="text-sm hover:text-blue-400 transition-colors"
               >
                 Cookie Policy
