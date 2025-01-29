@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+//import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 //import { Search, MapPin, Briefcase, Clock, ChevronDown, ChevronRight } from 'lucide-react';
 
 const CareersPage = () => {
@@ -8,10 +8,10 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-10">
       {/* CTA Section */}
-      <section className="py-5 bg-gradient-to-r from-orange-600 to-indigo-700 text-white border-2 border-green-500 rounded-lg shadow-lg p-6">
+      <section className="py-5 bg-gradient-to-r from-orange-300 to-indigo-700 text-white  rounded-lg shadow-lg p-6">
         <div className="container mx-auto px-4 text-center ">
-          <div><BusinessCenterIcon></BusinessCenterIcon></div>
-          <h1 className="text-5xl font-bold mb-6 text-orange-500">Career</h1>
+
+          <h1 className="text-5xl font-bold mb-6 text-white">Career</h1>
           <p className=" mb-8  mx-auto">
           Joining RSquareSoft Technologies means embarking on a career journey infused with innovation, growth, and meaningful impact. As a pioneering force in Cloud Computing, Machine Learning, Data Anlytics, and Artificial Intelligence, we understand that our team is the cornerstone of our success. At RSquareSoft, we don’t just offer jobs; we provide opportunities for individuals to contribute to groundbreaking projects, shape cutting-edge technologies, and be part of a collaborative and forward-thinking community. We believe in fostering an environment where talents are not just recognized but are continually nurtured, where creativity is not only encouraged but is a driving force behind every solution we develop. Your career at RSquareSoft is not just a job; it’s a pathway to professional fulfillment, personal growth, and the chance to be a part of shaping the future of technology.
           </p>
@@ -19,10 +19,6 @@ const CareersPage = () => {
       </section>
       
 
-      {/* Search and Filter Section */}
-      
-
-      {/* Job Listings Section */}
       
 
       {/* Benefits Section */}
@@ -73,7 +69,6 @@ const CareersPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
       
 
       {/* Hero Section */}

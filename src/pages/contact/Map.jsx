@@ -56,7 +56,8 @@ export default function Map() {
             </div>
           </div>
         </div>
-        <img src={gmap} alt="googlemap" className="ml-10 w-1/2 h-70" />
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.4210941100114!2d73.77660447496496!3d18.600120282508932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9116d94f3b3%3A0x4bb43bac520d9523!2sThe%20Woods!5e0!3m2!1sen!2sin!4v1738068008786!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
       </div>
     </>
   );

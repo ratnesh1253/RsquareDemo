@@ -28,7 +28,7 @@ const Footer = () => {
               <a href="#" className="text-gray-100 hover:text-blue-400 transition-colors">
                 <TwitterIcon className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-100 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/company/rsquaresoft/" className="text-gray-100 hover:text-blue-400 transition-colors">
                 <LinkedInIcon className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-100 hover:text-blue-400 transition-colors">
