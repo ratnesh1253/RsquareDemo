@@ -6,6 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -41,12 +42,12 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-6">Quick Links</h5>
             <ul className="space-y-3">
-              <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="/about-us/" className="hover:text-blue-400 transition-colors">About Us</a></li>
-              <li><a href="/products/" className="hover:text-blue-400 transition-colors">Products</a></li>
-              <li><a href="/services" className="hover:text-blue-400 transition-colors">Services</a></li>
-              <li><a href="career" className="hover:text-blue-400 transition-colors">Careers</a></li>
-              <li><a href="contact-us" className="hover:text-blue-400 transition-colors">Contact Us</a></li>
+              <li><Link to="/" className='hover:text-blue-400 transition-colors'>Home</Link></li>
+              <li><Link to="/about-us/" className="hover:text-blue-400 transition-colors">About Us</Link></li>
+              <li><Link to="/products/" className="hover:text-blue-400 transition-colors">Products</Link></li>
+              <li><Link to="/services" className="hover:text-blue-400 transition-colors">Services</Link></li>
+              <li><Link to="career" className="hover:text-blue-400 transition-colors">Careers</Link></li>
+              <li><Link to="contact-us" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
